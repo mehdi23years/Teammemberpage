@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet Our Team</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --bg: #f3f4f6;
+      --white: #fff;
+      --gray: #6b7280;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--gray);
+    }
+
+    header {
+      background-color: var(--white);
+      padding: 4rem 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* can be minmax(200px, 1fr) */
+  gap: 2rem;
+  padding: 2rem;
+}
+
+
+    .team-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--white);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    }
+
+   .team-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* modern CSS property */
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+
+
+    .team-info {
+      padding: 1.2rem;
+      text-align: center;
+    }
+
+    .team-info h3 {
+      font-size: 1.4rem;
+      margin: 0.5rem 0;
+      color: var(--primary);
+    }
+
+    .team-info .role {
+      font-size: 1rem;
+      color: #888;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-info .bio {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .social a {
+      color: var(--primary);
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .social a:hover {
+      color: var(--secondary);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meet Our Team</h1>
+    <p>We are a diverse group of tech enthusiasts, designers, and strategists shaping the digital future.</p>
+  </header>
+
+  <section class="team-grid">
+
+    <!-- Team Member 1 -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John">
+      <div class="team-info">
+        <h3>John Doe</h3>
+        <p class="role">Frontend Developer</p>
+        <p class="bio">React & Vue.js specialist crafting scalable UI components.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 2 -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah">
+      <div class="team-info">
+        <h3>Sarah Smith</h3>
+        <p class="role">UI/UX Designer</p>
+        <p class="bio">Designs delightful user experiences with Figma and Adobe XD.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-behance"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 3 -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Ali">
+      <div class="team-info">
+        <h3>Ali Khan</h3>
+        <p class="role">Backend Developer</p>
+        <p class="bio">Node.js engineer with focus on APIs, DBs & performance.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 4 -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emma">
+      <div class="team-info">
+        <h3>Emma Lee</h3>
+        <p class="role">Project Manager</p>
+        <p class="bio">Leads agile teams to timely delivery and happy clients.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 5 -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/90.jpg" alt="Zain">
+      <div class="team-info">
+        <h3>Zain Raza</h3>
+        <p class="role">QA Engineer</p>
+        <p class="bio">Ensures bug-free releases using automated & manual testing.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 6 -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/51.jpg" alt="Aisha">
+      <div class="team-info">
+        <h3>Aisha Noor</h3>
+        <p class="role">Product Owner</p>
+        <p class="bio">Aligns vision and strategy with actionable product roadmaps.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 7 -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Bilal">
+      <div class="team-info">
+        <h3>Bilal Ahmed</h3>
+        <p class="role">Mobile App Developer</p>
+        <p class="bio">Flutter developer building native experiences for Android & iOS.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 8 -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Fatima">
+      <div class="team-info">
+        <h3>Fatima Khan</h3>
+        <p class="role">Marketing Lead</p>
+        <p class="bio">Drives brand awareness and leads growth campaigns.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
